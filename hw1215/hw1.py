@@ -4,7 +4,7 @@
 inp = input('Enter string: ')
 ans = {}
 
-for i in inp:
-    ans[i] = ans.get(i, 0) + 1
+for char in inp:
+    ans[char] = ans.get(char, 0) + 1
 
 print(ans)
