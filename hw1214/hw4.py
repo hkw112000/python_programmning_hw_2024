@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 def maxnum(num_str):
-    return int(''.join(sorted(list(num_str), reverse=True)))
+    return int(''.join(sorted(list(f'{num_str:03}'), reverse=True)))
 
 
 def minnum(num_str):
-    return int(''.join(sorted(list(num_str))))
+    return int(''.join(sorted(list(f'{num_str:03}'))))
 
 
 def process_difference(num_str):
@@ -21,6 +21,7 @@ def process_difference(num_str):
 
 inp = input('Enter string: ')
 # inp = '251'
+# inp = '100'
 
 print(maxnum(inp))
 print(minnum(inp))
