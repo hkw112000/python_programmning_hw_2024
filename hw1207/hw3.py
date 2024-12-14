@@ -122,6 +122,12 @@ import json
 #                 {'element': 0, 'sysmbol': 'X', 'name': 'Unknown'}]
 
 all_elements = json.load(open('elements.txt'))
-ans = [element for element in all_elements if element['name'][-3:] == "ium"]
+
+ans = []
+for element in all_elements:
+    if element['name'][-3:] == "ium":
+        ans.append(element)
+
+# ans = [element for element in all_elements if element['name'][-3:] == "ium"]
 
 print(ans)

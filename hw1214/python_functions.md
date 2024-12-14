@@ -22,3 +22,25 @@ inlist = [89, 77, 95, 81, 100]
 
 print(curving(inlist))
 [94,88,97,90,.100]
+
+4. Write a function maxnum that takes in a 3-digit integer and return the maximum of that integer.
+
+Sample run:
+print(maxnum(251))
+521
+
+Write a function minnum that takes in a 3-digit integer and return the minimum of that
+integer.
+Sample run:
+Print(minnum(251))
+125
+
+Given a 3-digit integer num:
+Do until the difference of maxnum and minnum is not 495.
+
+Print the difference (maxnum – minnum)
+Sample run:
+num = 521
+521 – 125 = 396
+963 – 369 = 594
+954 – 459 = 495
